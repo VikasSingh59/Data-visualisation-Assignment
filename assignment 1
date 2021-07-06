@@ -1,0 +1,42 @@
+import numpy as np
+import pandas as pd
+import seaborn as sns
+
+import matplotlib as mpl
+import matplotlib.pyplot as plt
+%matplotlib inline
+
+print('Matplotlib version: ', mpl.__version__)
+
+print(plt.style.available)
+
+from numpy.random import randn,randint, uniform, sample
+##assignment 1
+x = np.arange(1,11)
+y =  3 * x + 5
+x
+plt.title("Line plot")
+plt.xlabel("x axis")
+plt.ylabel("y axis")
+plt.plot(x,y,  'go--', linewidth=1, markersize=5)
+
+
+###assignment
+
+x=[1,2,3,4,5,6,7] #days of week
+y=[160,150,140,145,175,165,180] #sales
+plt.plot(x,y,color='b', marker='o')
+plt.show()
+
+days = [1,2,3,4,5,6,7] #days of the week 
+sales_1 = [160, 150, 140, 145, 175, 165, 180] #sales of the company 1
+sales_2 = [70, 90, 160, 150, 140, 145, 175] #sales of the company 2
+
+plt.figure(figsize=(6,5), dpi=150)
+plt.plot(days, sales_1,label='sales_1',marker='o',color='b')
+plt.plot(days, sales_2,label='sales_2',marker='o',color='r')
+plt.title('Sales distribution',color='blue')
+plt.xlabel('days of the week',color='blue')
+plt.ylabel('sales',color='blue')
+plt.legend(loc='upper left')
+plt.grid()
