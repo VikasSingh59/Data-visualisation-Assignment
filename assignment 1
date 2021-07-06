@@ -21,7 +21,7 @@ plt.ylabel("y axis")
 plt.plot(x,y,  'go--', linewidth=1, markersize=5)
 
 
-###assignment
+###assignment 2
 
 x=[1,2,3,4,5,6,7] #days of week
 y=[160,150,140,145,175,165,180] #sales
@@ -40,3 +40,14 @@ plt.xlabel('days of the week',color='blue')
 plt.ylabel('sales',color='blue')
 plt.legend(loc='upper left')
 plt.grid()
+
+##OR
+x =[1,2,3,4,5,6,7]  #days of weeks
+y = [160,150,140,145,175,165,180]  #sales
+plt.title("Line plot", )
+plt.xlabel("x axis")
+plt.ylabel("y axis")
+plt.plot(x,y,  'go--', linewidth=1, markersize=5)
+
+#plt.plot(x,y)
+#plt.show()
